@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>TAPAT</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/lguicon.ico"/>
+       
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        
+        <link href="./assets/lib/animate/animate.min.css" rel="stylesheet"/>
+        <link href="./assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+        <link href="./assets/lib/venobox/venobox.css" rel="stylesheet">
+        
+        <link href="./assets/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+
+
+        <!-- Template Stylesheet -->
+        <link href="./assets/css/style.css" rel="stylesheet"/>
+        <script src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+            
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+            
+            <img src="./assets/img/lgulogo.png" alt="Icon" width="80" height="60"/>
+                <a href="" class="navbar-brand">TAPAT</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="home.html" class="nav-item nav-link active">Home</a>
+                        <a href="registration.html" class="nav-item nav-link">Registration</a>
+                        <a href="profiling.html" class="nav-item nav-link">EQP Profiling</a>
+                      <!--   <a href="home/#eqp" class="nav-item nav-link">EQP Generator</a> -->
+                        <a href="scanner.html" class="nav-item nav-link">QR Scanner</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Health Monitoring</a>
+                            <div class="dropdown-menu">
+                                <a href="health.html" class="dropdown-item">Covid Health Monitoring (KoboTool)</a>
+                                <a href="aefi.html" class="dropdown-item">Adverse Effects Following Immunization (AEFI)</a>
+                                <!-- <a href="vaccine" class="dropdown-item">Vaccine Registration</a> -->
+                            </div>
+                        </div>
+                        <a href="vaccine.html" class="nav-item nav-link">Vaccination</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+  
+  <!-- Carousel Start -->
+  <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                        <img src="./assets/img/gensanlogo.png" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Trace And Protect Action Team (TAPAT) System</h1>
+                            <p>
+                            is designed to alert the registrant and the household in cases where a possible contact or encounter happened at a certain site and date/time to a COVID19 Suspect/Probable/Confirmed resident or traveller.                          
+                            </p>
+                            <p>
+                            Residents of General Santos City should use their color-coded Electronic Quarantine Pass (EQP) previously issued by their respective barangays last March. TAPAT Registration is not required for EQP holders, and qualified members of the same household, unless requested by competent health professionals.
+                            </p>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        
+ <!-- Fact Start -->
+ <div class="fact">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="fact-item">
+                        <img src="./assets/img/icon-1.png" alt="Icon">
+                            <h2>Registration</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="fact-item">
+                        <img src="./assets/img/profiling.png" alt="Icon">
+                            <h2>Profiling</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="fact-item">
+                        <img src="./assets/img/qrscanner.png" alt="Icon">
+                            <h2>QR Scanner</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="fact-item">
+                        <img src="./assets/img/health.png" alt="Icon">
+                            <h2>Health Monitoring</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="fact-item">
+                        <img src="./assets/img/vaccine.png" alt="Icon">
+                            <h2>Vaccination</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact Start -->
+        
+
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+            <div class="section-header">                           
+                            <h2>REGISTRATION</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                                Non-resident of GenSan who will enter the City of GenSan should register their QR ID like CCTS, MDTC, Cotabato QR to TAPAT for 
+                                Contact Tracing and Health Monitoring purposes and for those people who doesn’t have Contact Tracing IDs they can Generate TAPAT QR instead. 
+                                The registered QR ID in TAPAT will be used for scanning upon entering to any border checkpoints, establishments and offices.
+                            </h5>
+                        </div>
+                <div class="row align-items-center">               
+                    <div class="col-md-6">
+                
+                        <div class="about-img">
+                            <div class="about-img-1">
+                            <img src="./assets/img/registration.png" alt="Icon">
+                            </div>
+                            <div class="about-img-2">
+                            <img src="./assets/img/gstapat.png" alt="Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <div class="fact-item">                           
+                            <h2>• IF WITH (CCTS, MTDC, COTABATO QR, TAPAT QR)</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                                -> Proceed to Registration Form <a style="text-decoration: underline;" href="https://ee.humanitarianresponse.info/x/VYEfDs4T">Here</a>
+                            </h5>
+                            <h5>
+                                -> Self Registration KoboCollect Download <a style="text-decoration: underline;" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android&hl=en">Here</a>
+                                <br>
+                                -> Watch the Video How to use KoboCollect <a style="text-decoration: underline;" href="https://www.youtube.com/watch?v=ex3D03d7eXk">Here</a>
+                            </h5>
+                        </div>
+
+                        <div class="fact-item">                           
+                            <h2>• IF NO (CCTS, MTDC, COTABATO QR, TAPAT QR)</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                                -> Generate TAPAT QR <a style="text-decoration: underline;" href="iregister">Here</a>
+                                <br>
+                                -> Proceed to Registration Form <a style="text-decoration: underline;" href="https://ee.humanitarianresponse.info/x/VYEfDs4T">Here</a>
+                            </h5>
+                        </div>
+                        
+                        <div class="fact-item">                           
+                            <h3 style="color:red"> • For those who encounter Unknown QR Code. Please update your TAPAT QR.</h3>
+
+                        </div>
+                        <div class="about-text">
+                        
+                            <h5>
+                                -> Update or Generate your existing Tapat QR <a style="text-decoration: underline;" href="tapatqr">Here</a>
+                            </h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- EQP Profiling Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header">
+                 <p>EQP Profiling</p>
+                    <h2>EQP PROFILING INSTRUCTIONS</h2>
+                </div>
+                 <div class="about-text">
+                            <h5>
+                                In order to generate Gensan Resident ID for each member of the Household, 
+                                the EQP released last march 2020 by LGU Gensan needs to be activated by profiling, 
+                                these Instructional video will be a guide to all GenSan residents on how to do profiling of their EQP, 
+                                If it’s impossible for the household to do it on their own we have BCCF off to do the profiling by going to your house.
+                            </h5>
+                            
+                            <h6 style="color:red">
+                                *Reminders profiling of EQP should be conducted on households residence because geolocation is included in the profiling, 
+                                geolocation is important for contact tracing later on.
+                            </h6>
+                        </div>
+              <div class="row">
+
+                  <div class="col-lg-12 video-box" style="text-align:center;">
+                    <div class="section-header" style="text-align:center;">                           
+                            <h2>• OVERVIEW OF EQP</h2>
+                    </div>
+                    <img src="./assets/img/eqprofile.png" class="img-fluid" alt="">
+                     <a href="https://www.youtube.com/watch?v=JxIx17mXou8" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                
+                 <div class="about-text">
+                     <h5>
+            
+                    </h5>
+                </div>
+
+                </div>
+                  
+            </div>
+            
+             <div class="row">
+
+                  <div class="col-lg-12 video-box" style="text-align:center;">
+                    <div class="section-header" style="text-align:center;">                           
+                            <h2>• CONCEPT OF EQP</h2>
+                    </div>
+                    <img src="./assets/img/eqprofile.png" class="img-fluid" alt="">
+                     <a href="https://www.youtube.com/watch?v=ClPBeqP4JnM" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                
+                 <div class="about-text">
+                     <h5>
+            
+                    </h5>
+                </div>
+
+                </div>
+                  
+            </div>
+
+
+            <div class="row">
+
+            <div class="col-lg-12 video-box" style="text-align:center;">
+                    <div class="section-header" style="text-align:center;">                          
+                            <h2>• KOBOTOOL INSTALLATION AND SETUP</h2>
+                    </div>
+            <div class="about-text">
+                    <h5>
+                    -> KoboCollect Download <a style="text-decoration: underline;" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android&hl=en">Here</a> 
+                    </h5>
+            </div>
+
+    <img src="./assets/img/eqprofile.png" class="img-fluid" alt="">
+    <a href="https://www.youtube.com/watch?v=p2SimNO3FeM" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+</div>
+
+
+
+</div>       
+
+
+</div>
+
+        </div>
+
+       </div>
+        <!-- EQP Profiling End -->
+
+
+          <!-- EQP Generator Start 
+          <div class="about" id="eqp">
+            <div class="container">
+            <div class="section-header">                           
+                            <h2>INDIVIDUAL EQP QR ID GENERATOR</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                                It enables GenSan resident to generate their GenSan Resident ID online provided that their EQP has been profiled. 
+                                The GenSan Resident ID Generated will be presented in any establishment, government offices, checkpoints, and 
+                                it will be used to scan for daily Health Monitoring for persons under quarantine. 
+                            </h5>
+                        </div>
+                <div class="row align-items-center">
+ 
+                    <div class="col-md-6">
+                  
+                        <div class="about-img">
+                            <div class="about-img-1">
+                            <img src="./assets/img/registration.png" alt="Icon">
+                            </div>
+                            <div class="about-img-2">
+                            <img src="./assets/img/eqpcard.png" alt="Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">                    
+                        <div class="fact-item">                           
+                            <h2>• EQP GENERATOR</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                               -> Proceed to this site <a style="text-decoration: underline;" href="">Here</a> 
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        -->
+        <!-- EQP Generator End -->
+
+  <!-- TAPAT Scanner Start -->
+  <div class="about">
+            <div class="container">
+            <div class="section-header">                           
+                            <h2>TAPAT QR SCANNER</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                                A customized QR reader developed by LGU-GENSAN intended to replace the usual logbook system in entering any establishment, 
+                                government offices and checkpoints and it enables LGU-Health Official to conduct 
+                                contact tracing way faster than the current manual contact tracing. 
+                            </h5>
+                        </div>
+                <div class="row align-items-center">
+                
+                    <div class="col-md-6">
+
+                        <div class="about-img">
+                            <div class="about-img-1">
+                            <img src="./assets/img/scannericon.png" alt="Icon">
+                            </div>
+                            <div class="about-img-2">
+                            <img src="./assets/img/scannermenu.png" alt="Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+ 
+                        <div class="fact-item">                           
+                            <h2>• ESTABLISHMENTS/BUSINESS</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                                -> To download the app you need to register with your Business Identification Number for verification. Register <a style="text-decoration: underline;" href="http://tapat.gensantos.gov.ph/scanner/">Here</a>
+                            </h5>
+                        </div>
+
+                        <div class="fact-item">                           
+                            <h2>• NATIONAL GOVERNMENT AGENCIES</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                                -> To download the app, send request to <a style="text-decoration: underline;" href="mailto:govscannerbuild@gensantos.gov.ph?subject = Feedback&body = Message">govscannerbuild@gensantos.gov.ph</a>
+                            </h5>
+                        </div>
+
+                        <div class="fact-item">                           
+                            <h2>• LGU DEPARTMENTS</h2>
+                        </div>
+                        <div class="about-text">
+                            <h5>
+                                -> Go to City Planning and Development Office/Information and Communications Technology Division.
+                            </h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TAPAT Scanner End -->
+
+
+      
+
+
+  <!-- Health Start -->
+ <div class="service">
+            <div class="container">
+            <div class="section-header">                           
+                            <h2>HEALTH MONITORING</h2>
+                        </div>
+                          <div class="about-text">
+                            <h5>
+                                Health Monitoring allows people under monitoring or those people under quarantine at 
+                                home to report their daily Health Condition remotely by just accessing thru the website; 
+                                while for person/s without access to internet will be monitored by BCCF or health workers using kobotool.
+                            </h5>
+                        </div>
+              <div class="row">
+
+                  <div class="col-lg-6 video-box">
+                  
+                    <img src="./assets/img/eqprofile.png" class="img-fluid" alt="">
+                     <a href="https://www.youtube.com/watch?v=kUKM9L5KhrY" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                  </div>
+
+                    <div class="col-lg-6 col-md-6">
+ 
+                        <div class="about-text">
+                            <h5>
+                                -> Proceed to Health Monitoring Form <a style="text-decoration: underline;" href="https://ee.humanitarianresponse.info/x/JcDSLbWz">Here</a>
+                            </h5>
+                            <h5>
+                                -> KoboCollect Download <a style="text-decoration: underline;" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android&hl=en">Here</a>
+                                <br>
+                                -> Watch the Video How to use KoboCollect <a style="text-decoration: underline;" href="https://www.youtube.com/watch?v=dzgWcOhuRb8">Here</a>
+                            </h5>
+                        </div>
+
+          
+                    </div>
+                  
+            </div>
+        </div>
+
+      </div>
+
+       </div>
+         <!-- Health End -->
+
+ <!-- Footer Start -->
+ <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                        <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>GENSAN COVID-19 HOTLINES</h2>
+                                    <p><i class="fa fa-envelope"></i> traceandprotect@gensantos.gov.ph</p>
+                                    <p><i class="fa fa-phone-alt"></i> 09510888801 09510888803</p>
+                                    <p><i class="fa fa-phone-alt"></i> 09510888804 09510888805</p>
+                                    <p><i class="fa fa-phone-alt"></i> 09510888806 09510888807</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Support/Help Desk:</h2>                                   
+                                    <p><i class="fa fa-envelope"></i>katapat@gensantos.gov.ph</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>General Santos City</p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <h2>Trace And Protect Action Team (TAPAT)</h2>
+                            <p>
+                            The application of technology in any contact tracing or health monitoring system is intended to facilitate volunteerism and Community Action. 
+                            Focus should still be centered on the provision of safe and affordable water and utilites, sanitation and hygienic conditions essential to protecting human health during all infectious disease outbreaks (WHO).
+                            </p>
+                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="#">TAPAT - LGU General Santos</a>, All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="./assets/lib/easing/easing.min.js"></script>
+        <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="./assets/lib/waypoints/waypoints.min.js"></script>
+        <script src="./assets/lib/counterup/counterup.min.js"></script>
+        <script src="./assets/lib/venobox/venobox.min.js"></script>            
+
+        <!-- Template Javascript -->
+        <script src="./assets/js/main.js"></script>
+        
+    </body>
+</html>

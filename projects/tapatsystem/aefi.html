@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>TAPAT</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/lguicon.ico"/>
+       
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        
+        <link href="./assets/lib/animate/animate.min.css" rel="stylesheet"/>
+        <link href="./assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+        <link href="./assets/lib/venobox/venobox.css" rel="stylesheet">
+        
+        <link href="./assets/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+
+
+        <!-- Template Stylesheet -->
+        <link href="./assets/css/style.css" rel="stylesheet"/>
+        <script src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+            
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+            
+            <img src="./assets/img/lgulogo.png" alt="Icon" width="80" height="60"/>
+                <a href="" class="navbar-brand">TAPAT</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="home.html" class="nav-item nav-link active">Home</a>
+                        <a href="registration.html" class="nav-item nav-link">Registration</a>
+                        <a href="profiling.html" class="nav-item nav-link">EQP Profiling</a>
+                      <!--   <a href="home/#eqp" class="nav-item nav-link">EQP Generator</a> -->
+                        <a href="scanner.html" class="nav-item nav-link">QR Scanner</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Health Monitoring</a>
+                            <div class="dropdown-menu">
+                                <a href="health.html" class="dropdown-item">Covid Health Monitoring (KoboTool)</a>
+                                <a href="aefi.html" class="dropdown-item">Adverse Effects Following Immunization (AEFI)</a>
+                                <!-- <a href="vaccine" class="dropdown-item">Vaccine Registration</a> -->
+                            </div>
+                        </div>
+                        <a href="vaccine.html" class="nav-item nav-link">Vaccination</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+ 
+  <!-- Carousel Start -->
+    <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                        <img src="./assets/img/gensanlogo.png" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Trace And Protect Action Team (TAPAT) System</h1>
+                            <p>
+                            is designed to alert the registrant and the household in cases where a possible contact or encounter happened at a certain site and date/time to a COVID19 Suspect/Probable/Confirmed resident or traveller.                          
+                            </p>
+                            <p>
+                            Residents of General Santos City should use their color-coded Electronic Quarantine Pass (EQP) previously issued by their respective barangays last March. TAPAT Registration is not required for EQP holders, and qualified members of the same household, unless requested by competent health professionals.
+                            </p>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+    </div>
+        <!-- Carousel End -->
+        
+  <!-- Health Start -->
+    <div class="contact mt-125" id="monitoring">
+        <div class="container">
+            <div class="section-header">                           
+                            <h2>ADVERSE EFFECTS FOLLOWING IMMUNIZATION (AEFI) MONITORING</h2>
+            </div>
+                        <div class="about-text">
+                            <h5>
+                                Adverse Effects Monitoring allows people under monitoring to report their Health Condition by just accessing thru the website.
+                            </h5>
+                        </div>
+                <div class="row">
+
+                <div class="col-md-12">
+                        <div class="contact-form">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <div class="control-group">
+                                    Name
+                                    <input type="text" class="form-control" id="name" placeholder="" required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    QR Code (TAPAT)
+                                    <input type="email" class="form-control" id="email" placeholder="" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Email
+                                    <input type="email" class="form-control" id="email" placeholder="" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="control-group">
+                                    Vaccine Manufacturer
+                                    <input type="text" class="form-control" id="email" placeholder="" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="control-group">
+                                    Date Vaccinated
+                                    <input type="date" class="form-control" id="email" placeholder="" required="required" value="<?php echo date('Y-m-d');?>" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="control-group">
+                                    Time Vaccinated
+                                    <input type="time" class="form-control" id="email" placeholder="" required="required" value="<?php echo date('H:i:s');?>" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="about-text">
+                                    <h5>
+                                    Adverse Effects
+                                    </h5>
+                                </div>
+
+                                <div class="row counters">
+
+                                    <div class="col-4">
+
+                                    <label class="chck">Myalgia
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Nausea
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Diarrhea
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Arthralgia
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Cough
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Chills
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Pruritus
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Loss of appetite
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Rhinorrhea
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Sore throat
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Injection site swelling, pruritus, erythema, induration
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+
+                                     <div class="col-4">
+
+                                     <label class="chck">Nasal Congestion
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Abdominal Pain
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Burn at injection site
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Vomit
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Hypersensitivity
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Abnormal skin and mucosa
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Fever
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Tremor
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Flushing
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Edema
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+                                        
+                                        <label class="chck">Hiccup
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </div>
+
+                                     <div class="col-4">
+
+                                        <label class="chck">Dizziness
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Drowsiness
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Muscle Spasms
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Eyelid Edema
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Nosebleeds
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Abdominal distension
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Constipation
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Hyposmia
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Ocular Congestion
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Hot Flashes
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Conjunctival Congestion
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="control-group">
+                                        Other Adverse Effects
+                                        <textarea type="time" class="form-control" id="email" placeholder="" required="required" data-validation-required-message="Please enter your email">
+                                        </textarea>
+                                </div>
+
+                                <div>
+                                    <button class="btn btn-info btn-block rounded-0 py-2" type="submit" id="sendMessageButton" style="background-color:#092a49; color:white;">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                  
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+         <!-- Health End -->
+
+         <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                        <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>GENSAN COVID-19 HOTLINES</h2>
+                                    <p><i class="fa fa-envelope"></i> traceandprotect@gensantos.gov.ph</p>
+                                    <p><i class="fa fa-phone-alt"></i> 09510888801 09510888803</p>
+                                    <p><i class="fa fa-phone-alt"></i> 09510888804 09510888805</p>
+                                    <p><i class="fa fa-phone-alt"></i> 09510888806 09510888807</p>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Support/Help Desk:</h2>                                   
+                                    <p><i class="fa fa-envelope"></i>katapat@gensantos.gov.ph</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>General Santos City</p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <h2>Trace And Protect Action Team (TAPAT)</h2>
+                            <p>
+                            The application of technology in any contact tracing or health monitoring system is intended to facilitate volunteerism and Community Action. 
+                            Focus should still be centered on the provision of safe and affordable water and utilites, sanitation and hygienic conditions essential to protecting human health during all infectious disease outbreaks (WHO).
+                            </p>
+                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="#">TAPAT - LGU General Santos</a>, All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="./assets/lib/easing/easing.min.js"></script>
+        <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="./assets/lib/waypoints/waypoints.min.js"></script>
+        <script src="./assets/lib/counterup/counterup.min.js"></script>
+        <script src="./assets/lib/venobox/venobox.min.js"></script>            
+        
+        <!-- Template Javascript -->
+        <script src="./assets/js/main.js"></script>
+        
+        </body>
+        </html>
+        

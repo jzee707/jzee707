@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>TAPAT</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/lguicon.ico"/>
+       
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        
+        <link href="./assets/lib/animate/animate.min.css" rel="stylesheet"/>
+        <link href="./assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+        <link href="./assets/lib/venobox/venobox.css" rel="stylesheet">
+        
+        <link href="./assets/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+
+
+        <!-- Template Stylesheet -->
+        <link href="./assets/css/style.css" rel="stylesheet"/>
+        <script src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+            
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+            
+            <img src="./assets/img/lgulogo.png" alt="Icon" width="80" height="60"/>
+                <a href="" class="navbar-brand">TAPAT</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="home.html" class="nav-item nav-link active">Home</a>
+                        <a href="registration.html" class="nav-item nav-link">Registration</a>
+                        <a href="profiling.html" class="nav-item nav-link">EQP Profiling</a>
+                      <!--   <a href="home/#eqp" class="nav-item nav-link">EQP Generator</a> -->
+                        <a href="scanner.html" class="nav-item nav-link">QR Scanner</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Health Monitoring</a>
+                            <div class="dropdown-menu">
+                                <a href="health.html" class="dropdown-item">Covid Health Monitoring (KoboTool)</a>
+                                <a href="aefi.html" class="dropdown-item">Adverse Effects Following Immunization (AEFI)</a>
+                                <!-- <a href="vaccine" class="dropdown-item">Vaccine Registration</a> -->
+                            </div>
+                        </div>
+                        <a href="vaccine.html" class="nav-item nav-link">Vaccination</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+ 
+  <!-- Carousel Start -->
+    <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                        <img src="./assets/img/gensanlogo.png" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>VACCINE REGISTRATION</h1>
+                            <br>
+                            <h4>
+                            <p>
+                            The LGU of General Santos City has set up this online platform for registration to our vaccination campaign.
+                            Once you sign up, we will validate the information you have provided and inform you of your schedule and 
+                            appointment details through your institution, barangay, association, registered cellphone number and/or 
+                            email address provided in your registration.
+                            </p>
+                            <p>For persons with comorbidities listed under the priority groups(A3), please include also the contact 
+                            details of your physician in the uploaded files for online or telephone verification.</p>
+                            <p>
+                            There will be <b>NO WALK-INs</b> at the Vaccination Site, We encourage you to pre-register in order to be included in the allocation and
+                            printing of vaccination cards.
+                            </p>
+                            <p>
+                            KAYA KUNG SAMA-SAMA, SAMA-SAMA MAGPABAKUNA. TAYO ANG SOLUSYUN!
+                            </p>
+                            </h4>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+    </div>
+        <!-- Carousel End -->
+        
+  <!-- Health Start -->
+    <div class="contact mt-125" id="monitoring">
+        <div class="container">
+            <div class="section-header">                           
+                            <h2>VACCINE PRE-REGISTRATION</h2>
+            </div>
+
+                        <div class="about-text">
+                            <h5>
+                                Vaccine Pre-Registration.
+                            </h5>
+                        </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                        <div class="contact-form">
+
+                        <div class="row"><ul style="color: #CB0000"></div>
+                            
+                            <form action="" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+
+                            <div class="control-group">
+                                    Priority Group *
+                                     <select name="prioritygroup" id="prioritygroup" class="form-control" required="required">
+                                    
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                
+
+                                <div class="control-group">
+                                    First Name *
+                                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="" required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Middle Name *
+                                    <input type="text" class="form-control" id="middlename" name="middlename" placeholder=""/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Last Name *
+                                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="" required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Suffix
+                                    <input type="text" class="form-control" id="suffix" name="suffix" placeholder=""/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Email Address *
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="" required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Contact No. *
+                                    <input type="text" class="form-control" id="contactno" name="contactno" placeholder="" required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Region *
+                                    <select name="region" id="region" class="form-control">
+                                        <option selected value="">Select Region</option>
+                                    <?php
+                                    foreach($region->result_array() as $row)
+                                    {
+                                             echo '<option value="'.$row["regDesc"].'">'.$row["regDesc"].'</option>';
+                                    }
+                                    ?>
+                                    
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Province *
+                                    <select name="province" id="province" class="form-control" required="required">
+                                          <option selected value="">Select Province</option>
+                                    <?php
+                                    foreach($province->result_array() as $row)
+                                    {
+                                             echo '<option value="'.$row["provDesc"].'">'.$row["provDesc"].'</option>';
+                                    }
+                                    ?>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    City/Municipality *
+                                    <select name="city" id="city" class="form-control" required="required">
+                                          <option selected value="">Select City/Municipality</option>
+                                    <?php
+                                    foreach($city->result_array() as $row)
+                                    {
+                                             echo '<option value="'.$row["citymunDesc"].'">'.$row["citymunDesc"].'</option>';
+                                    }
+                                    ?>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Barangay *
+                                    <select name="barangay" id="barangay" class="form-control" required="required">
+                                          <option selected value="">Select Barangay</option>
+                                    <?php
+                                    foreach($barangay->result_array() as $row)
+                                    {
+                                             echo '<option value="'.$row["brgyDesc"].'">'.$row["brgyDesc"].'</option>';
+                                    }
+                                    ?>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Purok *
+                                    <input type="text" class="form-control" id="purok" name="purok" placeholder="" required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Address (Blk/Street/Building) *
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="" required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Sex *
+                                    <select name="sex" id="sex" class="form-control">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Birthdate *
+                                    <input type="date" class="form-control" id="birthdate" name="birthdate" placeholder="" required="required" value="<?php echo date('Y-m-d');?>" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Occupation *
+                                    <input type="text" class="form-control" id="occupation" name="occupation" placeholder="" required="required"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    Allergy to vaccines or components of vaccines 
+                                    <input type="text" class="form-control" id="allergies" name="allergies" placeholder="" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div name="a3" id="a3" hidden>
+
+                                <div class="control-group">
+                                     Comorbidity *
+                                     <p class="help-block text-danger"></p>
+                                </div>
+  
+
+                                <div class="row counters">
+
+                                    <div class="col-4">
+
+                                    <label class="chck">Chronic Respiratory Disease
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Chronic Respiratory Disease"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Hypertension
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Hypertension"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Cardiovascular Disease
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Cardiovascular Disease"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Chronic Kidney Disease
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Chronic Kidney Disease"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Immunodeficiency State
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Immunodeficiency State"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+                                        
+
+                                    </div>
+
+                                     <div class="col-4">
+
+                                     <label class="chck">Cerebrovascular Accident
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Cerebrovascular Accident"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Malignancy
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Malignancy"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Diabetes
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Diabetes"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Obesity
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Obesity"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                    
+
+                                    </div>
+
+                                     <div class="col-4">
+
+                                     <label class="chck">Neurologic Disease
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Neurologic Disease"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Chronic Liver Disease
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Chronic Liver Disease"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Tuberculosis
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Tuberculosis"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="chck">Chronic Respiratory Tract Infection
+                                        <input type="checkbox" id="checkItem" name="check[]" value="Chronic Respiratory Tract Infection"/>
+                                        <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="control-group">
+                                    Others
+                                    <input type="text" class="form-control" id="others" name="others" placeholder="" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="control-group">                           
+                                <br>
+                                Provided with proofs of Comorbidity are as follows:
+                                <br>
+                                1. Medical Certificate from his/her attending physician issued within the past 18 months.
+                                <br>
+                                2. Prescription to medicines for the past 6 months.
+                                <br>
+                                3. Hospital records such as the discharge summary and medical abstract.
+                                <br>
+                                4. Surgical records and pathology reports.
+
+                                </div>
+
+                                File Upload
+
+                                <div class="control-group">
+                                   
+                                    <input type="file" name='files[]' multiple/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                </div>
+
+                                <div>
+                                    <button class="btn btn-info btn-block rounded-0 py-2" type="submit"  value='Upload' name='upload' style="background-color:#092a49; color:white;">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                  
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+         <!-- Health End -->
+
+      <script type="text/javascript">
+
+        $(document).ready(function(){
+            
+			$('#region').change(function(){
+			var region = $('#region').val();
+			if(region != '')
+			{
+			$.ajax({
+				url:"./auth/getProvince",
+				method:"POST",
+				data:{region:region},
+				success:function(data)
+				{
+				$('#province').html(data);
+				}
+			});
+			}
+			else
+			{
+			$('#province').html('<option value="">Select Province</option>');
+			$('#city').html('<option value="">Select Province</option>');
+			$('#barangay').html('<option value="">Select Province</option>');
+			}
+		});
+
+        $('#province').change(function(){
+			var province = $('#province').val();
+			if(province != '')
+			{
+			$.ajax({
+				url:"./auth/getCity",
+				method:"POST",
+				data:{province:province},
+				success:function(data)
+				{
+				$('#city').html(data);
+				}
+			});
+			}
+			else
+			{
+			$('#city').html('<option value="">Select City</option>');
+			$('#barangay').html('<option value="">Select Province</option>');
+			}
+		});
+
+        $('#city').change(function(){
+			var city = $('#city').val();
+			if(city != '')
+			{
+			$.ajax({
+				url:"./auth/getBarangay",
+				method:"POST",
+				data:{city:city},
+				success:function(data)
+				{
+				$('#barangay').html(data);
+				}
+			});
+			}
+			else
+			{
+			$('#barangay').html('<option value="">Select Barangay</option>');
+			}
+		});
+
+        $('#prioritygroup').change(function(){
+			var prioritygroup = $('#prioritygroup').val();
+            //var e = document.getElementById(id);
+			if(prioritygroup == '18-59 Years Old with Any Comorbidity (A3)')
+			{
+                $('#a3').attr('hidden', false);            
+
+			}
+			else
+			{
+
+                $('#a3').attr('hidden', true);
+			}
+		});
+		
+		document.getElementById("region").value= "REGION XII (SOCCSKSARGEN)";
+		document.getElementById("province").value= "SOUTH COTABATO";
+		document.getElementById("city").value= "GENERAL SANTOS CITY (DADIANGAS)";
+			
+		});
+
+    </script>
+         
+
+ <!-- Footer Start -->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                <div class="col-md-6">
+                        <div class="footer-link">
+                            <h2>GENSAN COVID-19 HOTLINES</h2>
+                            <p><i class="fa fa-envelope"></i> traceandprotect@gensantos.gov.ph</p>
+                            <p><i class="fa fa-phone-alt"></i> 09510888801 09510888803</p>
+                            <p><i class="fa fa-phone-alt"></i> 09510888804 09510888805</p>
+                            <p><i class="fa fa-phone-alt"></i> 09510888806 09510888807</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="footer-contact">
+                            <h2>Support/Help Desk:</h2>                                   
+                            <p><i class="fa fa-envelope"></i>katapat@gensantos.gov.ph</p>
+                            <p><i class="fa fa-map-marker-alt"></i>General Santos City</p>
+                        </div>
+                    </div>                           
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="footer-newsletter">
+                    <h2>Trace And Protect Action Team (TAPAT)</h2>
+                    <p>
+                    The application of technology in any contact tracing or health monitoring system is intended to facilitate volunteerism and Community Action. 
+                    Focus should still be centered on the provision of safe and affordable water and utilites, sanitation and hygienic conditions essential to protecting human health during all infectious disease outbreaks (WHO).
+                    </p>
+           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">TAPAT - LGU General Santos</a>, All Right Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/lib/easing/easing.min.js"></script>
+<script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="./assets/lib/waypoints/waypoints.min.js"></script>
+<script src="./assets/lib/counterup/counterup.min.js"></script>
+<script src="./assets/lib/venobox/venobox.min.js"></script>            
+
+<!-- Template Javascript -->
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
